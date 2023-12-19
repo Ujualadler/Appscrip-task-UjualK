@@ -37,7 +37,7 @@ function App() {
         </div>
       </div>
       <div className="w-full flex justify-center items-center mb-10">
-        <div className="w-[90%] grid grid-cols-4 gap-14 ">
+        <div className="w-[90%] grid grid-cols-4 sm:gap-14 gap-4 ">
           <FilterElement />
           {products.length > 0
             ? products.map((pro) => <ProductCard product={pro} />)

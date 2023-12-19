@@ -2,7 +2,7 @@ import React from "react";
 
 function ProductCard({ product }) {
   return (
-    <div className="shadow-lg  flex flex-col col-span-2 sm:col-span-1 sm:h-[460px] h-80">
+    <div className="shadow-md hover:bg-slate-300 p-1 flex flex-col col-span-2 sm:col-span-1 sm:h-[460px] h-80">
       <img
         className="sm:h-[380px] h-56 w-full"
         loading="lazy"
