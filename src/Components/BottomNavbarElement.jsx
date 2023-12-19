@@ -3,8 +3,8 @@ import React from "react";
 function BottomNavbarElement() {
   return (
     <div className="sm:flex justify-center items-center hidden">
-      <div className="w-[41%] flex justify-between gap-2">
-        <h3 className="text-stone-800 text-xl font-bold font-['Simplon Norm'] tracking-wide">
+      <div className="sm:w-[60%] md:[50%] flex justify-between gap-2">
+        <h3 className="text-stone-800 text-lg font-bold font-['Simplon Norm'] tracking-wide">
           SHOP
         </h3>
         <h3 className="text-stone-800 text-xl font-bold font-['Simplon Norm'] tracking-wide">
