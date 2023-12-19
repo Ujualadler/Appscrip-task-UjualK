@@ -1,0 +1,13 @@
+.text-truncate {
+  /* Set the element to a specific width */
+  width: 150px; /* Set your desired width */
+
+  /* Prevent content from wrapping */
+  white-space: nowrap;
+
+  /* Hide content that overflows the width */
+  overflow: hidden;
+
+  /* Display ellipsis (...) for truncated text */
+  text-overflow: ellipsis;
+}

@@ -1,9 +1,26 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import Navbar from "./Sections/Navbar";
 import Footer from "./Sections/Footer";
+import FilterElement from "./Components/FilterElement";
+import ProductCard from "./Components/ProductCard";
+import axios from "axios";
 
 function App() {
+  const [products, setProducts] = useState([]);
+
+  useEffect(() => {
+    const fetchProducts = async () => {
+      try {
+        const response = await axios.get("https://fakestoreapi.com/products");
+        setProducts(response.data);
+      } catch (error) {
+        console.error("Error fetching categories:", error);
+      }
+    };
+    fetchProducts();
+  }, []);
+
   return (
     <>
       <Navbar />
@@ -17,6 +34,14 @@ function App() {
             scelerisque. Dolor integer scelerisque nibh amet mi ut elementum
             dolor.
           </p>
+        </div>
+      </div>
+      <div className="w-full flex justify-center items-center mb-10">
+        <div className="w-[90%] grid grid-cols-4 gap-14 ">
+          <FilterElement />
+          {products.length > 0
+            ? products.map((pro) => <ProductCard product={pro} />)
+            : ""}
         </div>
       </div>
       <Footer />

@@ -47,7 +47,7 @@ function Footer() {
               <h3 className="text-white text-xl font-bold font-['Simplon Norm'] uppercase">
                 CONTACT US
               </h3>
-              <div className="flex items-center sm:items-start sm:flex-col gap-2">
+              <div className="flex items-center sm:items-start flex-col gap-2">
                 <a
                   href="tel:+442211335360"
                   className="text-white sm:text-base text-sm  font-normal font-['Simplon Norm']"
@@ -85,7 +85,7 @@ function Footer() {
         <div className="grid grid-cols-3 ">
           <div className="sm:col-span-1 col-span-3 sm:mt-10 mt-4 sm:border-0 border-b-2 border-gray-400 sm:pb-8 pb-4 ">
             <div className="flex justify-between">
-              <h3 className="text-white text-2xl mb-3 font-bold font-['Simplon Norm']">
+              <h3 className="text-white sm:text-2xl text-xl mb-3 font-bold font-['Simplon Norm']">
                 mettā muse
               </h3>
               <img
@@ -122,7 +122,7 @@ function Footer() {
 
           <div className="sm:col-span-1 col-span-3 sm:border-0 border-b-2 sm:mt-10 mt-4 border-gray-400 sm:pb-8 pb-4 ">
             <div className="flex justify-between">
-              <h3 className="text-white text-2xl mb-3 font-bold font-['Simplon Norm']">
+              <h3 className="text-white sm:text-2xl text-xll mb-3 font-bold font-['Simplon Norm']">
                 Quick Links
               </h3>
               <img
@@ -163,7 +163,7 @@ function Footer() {
           <div className="sm:col-span-1 col-span-3 flex flex-col  sm:border-0 border-b-2 sm:mt-10 mt-4 border-gray-400 sm:pb-8 pb-4 ">
             <div>
               <div className="flex justify-between">
-                <h3 className="text-white text-2xl mb-3 font-bold font-['Simplon Norm']">
+                <h3 className="text-white sm:text-2xl text-xl mb-3 font-bold font-['Simplon Norm']">
                   Follow Us
                 </h3>
                 <img
@@ -190,28 +190,32 @@ function Footer() {
               </h3>
               <div className="grid grid-cols-6 gap-1">
                 <img
-                  className="w-10 sm:w-14"
+                  className="w-10 sm:w-14 h-9"
                   src="/gpay.png"
                   alt="Google Pay"
                 />
                 <img
-                  className="w-10 sm:w-14"
+                  className="w-10 sm:w-14 h-9"
                   src="/mastercard.png"
                   alt="Mastercard"
                 />
-                <img className="w-12 sm:w-14" src="/paypal.png" alt="PayPal" />
                 <img
-                  className="w-12 sm:w-14"
+                  className="w-12 sm:w-14 h-9"
+                  src="/paypal.png"
+                  alt="PayPal"
+                />
+                <img
+                  className="w-12 sm:w-14 h-9"
                   src="/amex.png"
                   alt="American Express"
                 />
                 <img
-                  className="w-12 sm:w-14"
+                  className="w-12 sm:w-14 h-9"
                   src="/applepay.png"
                   alt="Apple Pay"
                 />
                 <img
-                  className="w-12 sm:w-14"
+                  className="w-12 sm:w-14 h-9"
                   src="/dpay.png"
                   alt="Digital Payment"
                 />
