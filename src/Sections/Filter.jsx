@@ -22,21 +22,21 @@ function Filter({ width, categories }) {
       }}
     >
       {/* Rest of your component code */}
-      <div className="flex p-2  items-center gap-1">
+      <div className="flex p-2 border-b-2 w-full pt-4  border-[#E5E5E5]   items-center gap-1">
         <input
           type="checkbox"
           className="w-[20px] h-[20px] bg-white border border-neutral-600"
         />
-        <div className=" text-stone-800 text-lg font-bold font-['Simplon Norm'] uppercase">
+        <div className=" text-stone-800 text-lg  font-bold font-['Simplon Norm'] uppercase">
           Customizable
         </div>
       </div>
-      <div className="flex  items-center p-2 sm:mt-5 mt-3 ">
+      <div className="flex  items-center p-2   ">
         <div className="w-full">
           <ul className=" w-full ">
             {categories.map((category, index) => (
               <li
-                className="text-stone-800 w-full py-4 border-y-2 border-[#E5E5E5] text-lg font-bold font-['Simplon Norm'] uppercase"
+                className="text-stone-800 w-full py-4 border-b-2 border-[#E5E5E5] text-lg font-bold font-['Simplon Norm'] uppercase"
                 key={index}
                 onClick={() => handleCategoryClick(category)}
               >
