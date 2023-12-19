@@ -88,12 +88,21 @@ function Footer() {
               <h3 className="text-white sm:text-2xl text-lg mb-3 font-bold font-['Simplon Norm']">
                 mettā muse
               </h3>
-              <img
-                className="w-10 sm:hidden"
-                onClick={toggleAboutUs}
-                src="/arrowdown.png"
-                alt="About Us Dropdown"
-              />
+              {showAboutUs ? (
+                <img
+                  className="w-10 sm:hidden"
+                  onClick={toggleAboutUs}
+                  src="/arrowright.png"
+                  alt="Toggle Follow Us Dropdown"
+                />
+              ) : (
+                <img
+                  className="w-10 sm:hidden"
+                  onClick={toggleAboutUs}
+                  src="/arrowdown.png"
+                  alt="Toggle Follow Us Dropdown"
+                />
+              )}
             </div>
 
             {showAboutUs && (
@@ -125,12 +134,21 @@ function Footer() {
               <h3 className="text-white sm:text-2xl text-lg mb-3 font-bold font-['Simplon Norm']">
                 Quick Links
               </h3>
-              <img
-                className="w-10 sm:hidden"
-                onClick={toggleQuickLinks}
-                src="/arrowdown.png"
-                alt="Quick Links Dropdown"
-              />
+              {showQuickLinks ? (
+                <img
+                  className="w-10 sm:hidden"
+                  onClick={toggleQuickLinks}
+                  src="/arrowright.png"
+                  alt="Toggle Follow Us Dropdown"
+                />
+              ) : (
+                <img
+                  className="w-10 sm:hidden"
+                  onClick={toggleQuickLinks}
+                  src="/arrowdown.png"
+                  alt="Toggle Follow Us Dropdown"
+                />
+              )}
             </div>
 
             {showQuickLinks && (
@@ -166,12 +184,21 @@ function Footer() {
                 <h3 className="text-white sm:text-2xl text-xl mb-3 font-bold font-['Simplon Norm']">
                   Follow Us
                 </h3>
-                <img
-                  className="w-10 sm:hidden"
-                  onClick={toggleFollowUs}
-                  src="/arrowdown.png"
-                  alt="Toggle Follow Us Dropdown"
-                />
+                {showFollowUs ? (
+                  <img
+                    className="w-10 sm:hidden"
+                    onClick={toggleFollowUs}
+                    src="/arrowright.png"
+                    alt="Toggle Follow Us Dropdown"
+                  />
+                ) : (
+                  <img
+                    className="w-10 sm:hidden"
+                    onClick={toggleFollowUs}
+                    src="/arrowdown.png"
+                    alt="Toggle Follow Us Dropdown"
+                  />
+                )}
               </div>
               {showFollowUs && (
                 <div className="flex items-center gap-3">
