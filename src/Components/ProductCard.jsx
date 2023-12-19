@@ -21,7 +21,6 @@ function ProductCard({ product }) {
       )}
       <img
         className={`sm:h-[370px] h-56 w-full ${!imageLoaded ? "hidden" : ""}`}
-        loading="lazy"
         src={product?.image || "https://via.placeholder.com/300x399"}
         onLoad={handleImageLoad}
         alt={product?.title || "Product Image"}
