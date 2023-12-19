@@ -188,7 +188,7 @@ function Footer() {
               <h3 className="text-white text-xl sm:mt-10 mt-4 mb-4 font-bold font-['Simplon Norm']">
                 mettā muse Accepts
               </h3>
-              <div className="flex gap-1 items-center">
+              <div className="grid grid-cols-6 gap-1">
                 <img
                   className="w-10 sm:w-14"
                   src="/gpay.png"
@@ -220,7 +220,7 @@ function Footer() {
           </div>
         </div>
         <div className="flex justify-center items-center">
-          <div className="text-center sm:p-3 text-white text-sm  font-normal font-['Simplon Norm']">
+          <div className="text-center sm:p-3 py-3 sm:py-0 text-white text-sm  font-normal font-['Simplon Norm']">
             Copyright © 2023 mettamuse. All rights reserved.
           </div>
         </div>
