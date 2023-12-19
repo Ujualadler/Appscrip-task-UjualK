@@ -24,7 +24,20 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="h-64  flex justify-center items-center">
+      <div className="sm:hidden  w-full flex justify-center items-center">
+        <div className="w-[90%] flex justify-start gap-1">
+          <h4 className="text-neutral-300 text-xs font-normal font-['Simplon Norm']">
+            home
+          </h4>
+          <span className="text-neutral-300 text-xs font-normal font-['Simplon Norm']">
+            |
+          </span>
+          <h4 className="text-stone-800 text-xs font-normal font-['Simplon Norm']">
+            SHOP
+          </h4>
+        </div>
+      </div>
+      <div className="sm:h-64 h-56  flex justify-center items-center">
         <div className="flex flex-col gap-3 justify-center items-center">
           <h1 className="text-center text-stone-800 text-xl sm:text-4xl md:text-5xl font-normal font-['Simplon Norm'] uppercase sm:tracking-wide">
             DISCOVER OUR PRODUCTS
@@ -37,7 +50,7 @@ function App() {
         </div>
       </div>
       <div className="w-full flex justify-center items-center mb-10">
-        <div className="w-[90%] grid grid-cols-4 sm:gap-14 gap-4 ">
+        <div className="w-[90%] grid grid-cols-4 sm:gap-14 gap-2 ">
           <FilterElement />
           {products.length > 0
             ? products.map((pro) => <ProductCard product={pro} />)

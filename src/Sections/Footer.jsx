@@ -20,7 +20,7 @@ function Footer() {
         <div className="flex flex-col sm:flex-row  justify-between  gap-4 sm:border-b-2 sm:border-gray-400   ">
           <div className="flex flex-col sm:w-[50%] justify-center gap-5 sm:pb-8 pb-4 sm:border-0 border-b-2 border-gray-400 ">
             <div className="flex justify-start">
-              <h3 className="text-white text-xl font-bold font-['Simplon Norm'] uppercase">
+              <h3 className="text-white sm:text-xl text-lg font-bold font-['Simplon Norm'] uppercase">
                 Be the first to know
               </h3>
             </div>
@@ -44,10 +44,10 @@ function Footer() {
 
           <div className="flex flex-col col-span-2 mt-5 sm:0 sm:col-span-1 justify-center gap-5 ">
             <div className="flex flex-col gap-3 sm:border-0 border-b-2 border-gray-400 sm:pb-8 pb-4  ">
-              <h3 className="text-white text-xl font-bold font-['Simplon Norm'] uppercase">
+              <h3 className="text-white sm:text-xl text-lg font-bold font-['Simplon Norm'] uppercase">
                 CONTACT US
               </h3>
-              <div className="flex items-center sm:items-start flex-col gap-2">
+              <div className="flex items-start flex-col gap-2">
                 <a
                   href="tel:+442211335360"
                   className="text-white sm:text-base text-sm  font-normal font-['Simplon Norm']"
@@ -65,7 +65,7 @@ function Footer() {
             </div>
 
             <div className="flex flex-col gap-3 sm:border-0 border-b-2 border-gray-400 sm:pb-8 pb-4">
-              <h3 className="text-white text-xl font-bold font-['Simplon Norm'] uppercase">
+              <h3 className="text-white sm:text-xl text-lg font-bold font-['Simplon Norm'] uppercase">
                 Currency
               </h3>
               <div className="flex items-center gap-1">
@@ -85,7 +85,7 @@ function Footer() {
         <div className="grid grid-cols-3 ">
           <div className="sm:col-span-1 col-span-3 sm:mt-10 mt-4 sm:border-0 border-b-2 border-gray-400 sm:pb-8 pb-4 ">
             <div className="flex justify-between">
-              <h3 className="text-white sm:text-2xl text-xl mb-3 font-bold font-['Simplon Norm']">
+              <h3 className="text-white sm:text-2xl text-lg mb-3 font-bold font-['Simplon Norm']">
                 mettā muse
               </h3>
               <img
@@ -97,23 +97,23 @@ function Footer() {
             </div>
 
             {showAboutUs && (
-              <ul className="space-y-3 ">
-                <li className="text-white text-lg font-normal font-['Simplon Norm']">
+              <ul className="space-y-3  sm:text-lg text-md ">
+                <li className="text-white  font-normal font-['Simplon Norm']">
                   About Us
                 </li>
-                <li className="text-white text-lg font-normal font-['Simplon Norm']">
+                <li className="text-white  font-normal font-['Simplon Norm']">
                   Stories
                 </li>
-                <li className="text-white text-lg font-normal font-['Simplon Norm']">
+                <li className="text-white  font-normal font-['Simplon Norm']">
                   Artisans
                 </li>
-                <li className="text-white text-lg font-normal font-['Simplon Norm']">
+                <li className="text-white  font-normal font-['Simplon Norm']">
                   Boutiques
                 </li>
-                <li className="text-white text-lg font-normal font-['Simplon Norm']">
+                <li className="text-white  font-normal font-['Simplon Norm']">
                   Contact us
                 </li>
-                <li className="text-white text-lg font-normal font-['Simplon Norm']">
+                <li className="text-white  font-normal font-['Simplon Norm']">
                   EU Compliances Docs
                 </li>
               </ul>
@@ -122,7 +122,7 @@ function Footer() {
 
           <div className="sm:col-span-1 col-span-3 sm:border-0 border-b-2 sm:mt-10 mt-4 border-gray-400 sm:pb-8 pb-4 ">
             <div className="flex justify-between">
-              <h3 className="text-white sm:text-2xl text-xll mb-3 font-bold font-['Simplon Norm']">
+              <h3 className="text-white sm:text-2xl text-lg mb-3 font-bold font-['Simplon Norm']">
                 Quick Links
               </h3>
               <img
@@ -134,26 +134,26 @@ function Footer() {
             </div>
 
             {showQuickLinks && (
-              <ul className="space-y-3 ">
-                <li className="text-white text-lg font-normal font-['Simplon Norm']">
+              <ul className="space-y-3 sm:text-lg text-md ">
+                <li className="text-white  font-normal font-['Simplon Norm']">
                   Orders & Shipping
                 </li>
-                <li className="text-white text-lg font-normal font-['Simplon Norm']">
+                <li className="text-white  font-normal font-['Simplon Norm']">
                   Join/Login as a Seller
                 </li>
-                <li className="text-white text-lg font-normal font-['Simplon Norm']">
+                <li className="text-white  font-normal font-['Simplon Norm']">
                   Payment & Pricing
                 </li>
-                <li className="text-white text-lg font-normal font-['Simplon Norm']">
+                <li className="text-white  font-normal font-['Simplon Norm']">
                   Return & Refunds
                 </li>
-                <li className="text-white text-lg font-normal font-['Simplon Norm']">
+                <li className="text-white  font-normal font-['Simplon Norm']">
                   FAQs
                 </li>
-                <li className="text-white text-lg font-normal font-['Simplon Norm']">
+                <li className="text-white  font-normal font-['Simplon Norm']">
                   Privacy Policy
                 </li>
-                <li className="text-white text-lg font-normal font-['Simplon Norm']">
+                <li className="text-white  font-normal font-['Simplon Norm']">
                   Terms & Conditions
                 </li>
               </ul>
@@ -185,7 +185,7 @@ function Footer() {
               )}
             </div>
             <div>
-              <h3 className="text-white text-xl sm:mt-10 mt-4 mb-4 font-bold font-['Simplon Norm']">
+              <h3 className="text-white sm:text-xl text-lg sm:mt-10 mt-4 mb-4 font-bold font-['Simplon Norm']">
                 mettā muse Accepts
               </h3>
               <div className="grid grid-cols-6 gap-1">
