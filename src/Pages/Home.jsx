@@ -62,9 +62,7 @@ function Home() {
           <FilterElement filter={showFilter} show={setShowFilter} />
           {products.length > 0
             ? products.map((pro, index) => (
-                <div key={index}>
-                  <ProductCard product={pro} />
-                </div>
+                <ProductCard key={index} product={pro} />
               ))
             : ""}
           <Filter categories={categories} width={showFilter} />
