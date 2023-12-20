@@ -12,7 +12,7 @@ function Home() {
 
   const categories = [
     { name: "IDEAL FOR", subcategories: ["MEN", "WOMEN", "BABY & KIDS"] },
-    { name: "OCATION", subcategories: ["MEN", "WOMEN", "BABY & KIDS"] },
+    { name: "OCCASION", subcategories: ["MEN", "WOMEN", "BABY & KIDS"] },
     { name: "WORK", subcategories: ["MEN", "WOMEN", "BABY & KIDS"] },
     { name: "SPORTS", subcategories: ["MEN", "WOMEN", "BABY & KIDS"] },
   ];
@@ -61,7 +61,11 @@ function Home() {
         <div className="w-[90%] relative grid grid-cols-4 sm:gap-x-14 sm:gap-14 gap-x-2 gap-y-4 ">
           <FilterElement filter={showFilter} show={setShowFilter} />
           {products.length > 0
-            ? products.map((pro) => <ProductCard product={pro} />)
+            ? products.map((pro, index) => (
+                <div key={index}>
+                  <ProductCard product={pro} />
+                </div>
+              ))
             : ""}
           <Filter categories={categories} width={showFilter} />
         </div>

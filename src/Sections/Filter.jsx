@@ -16,12 +16,7 @@ function Filter({ width, categories }) {
       className={`${
         width ? "sm:w-[25%] w-full " : " w-0"
       }  overflow-hidden absolute  transition-all duration-700 z-30  top-24 bg-white h-[96.5%]`}
-      style={{
-        boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
-        borderLeft: "1px solid #ccc",
-      }}
     >
-      {/* Rest of your component code */}
       <div className="flex p-2 border-b-2 w-full pt-4  border-[#E5E5E5]   items-center gap-1">
         <input
           type="checkbox"
