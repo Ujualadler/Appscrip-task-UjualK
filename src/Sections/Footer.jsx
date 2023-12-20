@@ -17,7 +17,7 @@ function Footer() {
   return (
     <footer className="bg-black text-white  flex justify-center items-center ">
       <div className="sm:w-[80%] w-[90%] mt-10">
-        <div className="flex flex-col sm:flex-row  justify-between  gap-4 sm:border-b-2 sm:border-gray-400   ">
+        <div className="flex flex-col sm:flex-row  justify-between  gap-16 sm:border-b-2 sm:border-gray-400   ">
           <div className="flex flex-col sm:w-[50%] justify-center gap-5 sm:pb-8 pb-4 sm:border-0 border-b-2 border-gray-400 ">
             <div className="flex justify-start">
               <h3 className="text-white sm:text-xl text-lg font-bold font-['Simplon Norm'] uppercase">
@@ -75,7 +75,7 @@ function Footer() {
                   USD
                 </h3>
               </div>
-              <p className="sm:block hidden  text-white text-xs font-normal font-['Simplon Norm']">
+              <p className="sm:block w-[100%] hidden  text-white text-xs font-normal font-['Simplon Norm']">
                 Transactions will be completed in Euros and a currency reference
                 is available on hover.
               </p>
