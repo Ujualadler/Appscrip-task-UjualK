@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react";
+import React, { Suspense, useEffect, useState } from "react";
 import Navbar from "../Sections/Navbar";
 import Footer from "../Sections/Footer";
 import FilterElement from "../Components/FilterElement";
-import ProductCard from "../Components/ProductCard";
 import axios from "axios";
 import Filter from "../Sections/Filter";
+import Loader from "../Components/Loader";
+
+const LazyProductCard = React.lazy(() => import("../Components/ProductCard"));
 
 function Home() {
   const [products, setProducts] = useState([]);
@@ -60,11 +62,21 @@ function Home() {
       <div className="w-full flex  justify-center items-center mb-10">
         <div className="w-[90%] relative grid grid-cols-4 sm:gap-x-14 sm:gap-14 gap-x-2 gap-y-4 ">
           <FilterElement filter={showFilter} show={setShowFilter} />
-          {products.length > 0
-            ? products.map((pro, index) => (
-                <ProductCard key={index} product={pro} />
+          <Suspense
+            fallback={
+              <div className="flex justify-center items-center">
+                <Loader />
+              </div>
+            }
+          >
+            {products.length > 0 ? (
+              products.map((pro, index) => (
+                <LazyProductCard key={index} product={pro} />
               ))
-            : ""}
+            ) : (
+              <div>No products available</div>
+            )}
+          </Suspense>
           <Filter categories={categories} width={showFilter} />
         </div>
       </div>

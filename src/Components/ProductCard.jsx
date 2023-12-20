@@ -13,6 +13,7 @@ function ProductCard({ product }) {
         <div className="flex items-center justify-center h-full">
           {/* Placeholder or loading animation */}
           <img
+            loading="lazy"
             src="https://via.placeholder.com/300x399"
             alt="Placeholder"
             className="h-56 w-full"
