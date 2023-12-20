@@ -75,7 +75,7 @@ function Footer() {
                   USD
                 </h3>
               </div>
-              <p className="sm:block w-[100%] hidden  text-white text-xs font-normal font-['Simplon Norm']">
+              <p className="sm:block hidden  text-white text-xs font-normal font-['Simplon Norm']">
                 Transactions will be completed in Euros and a currency reference
                 is available on hover.
               </p>
